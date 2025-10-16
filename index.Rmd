@@ -1,0 +1,26 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Kennedy's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+You can do everything you usually do in an R Markdown file 
+
+(https://redia.giphy.com/redia/drGoWLiudhKw/giphy.gif)
+
+This rebsite is an example coming from [P8105](https://08105.com/index.html).
+We're making websites today! Learn more about this site [here](About.html)
+
+I also use for [google](https://www.google.com) a ton of data science.
+
+To show that you con just use RMD like normal, check out [this page](plots.html) with plots.
+
+here's a picture of Duke!
+![](images/duke.jpg)

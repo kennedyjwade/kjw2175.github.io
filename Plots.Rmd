@@ -1,0 +1,26 @@
+---
+title: "Plots"
+output: html_document
+---
+
+Here's tiydverse
+
+```{r}
+library(tidyverse)
+```
+
+here's the dataframe 
+```{r}
+plot_df = 
+  tibble(
+    x = rnorm(200, mean = 1, sd = 2),
+    y = 1+2*x + rnorm(100)
+  )
+```
+
+```{r}
+plot_df |>
+  ggplot(aes(x =x, y = y)) +
+  geom_point()
+```
+

@@ -1,0 +1,9 @@
+---
+title: "about"
+output: 
+      html_document:
+        theme: cerulean
+---
+
+This website was coded by Kennedy Wade using R Markdown to do all the hard work.
+go back to the [homepage](index.html)
