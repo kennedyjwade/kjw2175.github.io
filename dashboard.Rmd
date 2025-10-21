@@ -4,6 +4,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    theme: darkly 
 ---
 
 ```{r setup, include=FALSE}
@@ -13,6 +14,22 @@ library(p8105.datasets)
 
 library(plotly)
 ```
+
+```{r}
+data(nyc_airbnb)
+
+nyc_airbnb = 
+  nyc_airbnb |> 
+  mutate(rating = review_scores_location / 2) |>
+  select(
+    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) |>
+  filter(
+    !is.na(rating), 
+    neighbourhood_group == "Manhattan",
+    room_type == "Entire home/apt",
+    price %in% 100:500)
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -47,11 +64,6 @@ nyc_airbnb |>
   plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
 ```
 
-
-
-```{r}
-rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
-```
 
 
 
