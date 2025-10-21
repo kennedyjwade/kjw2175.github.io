@@ -39,6 +39,13 @@ nyc_airbnb |>
     color = ~price, text = ~text_label, alpha = 0.5)
 ```
 
+lets make a boxplot.
+
+```{r}
+nyc_airbnb |> 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
+  plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+```
 
 
 
