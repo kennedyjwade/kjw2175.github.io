@@ -7,6 +7,7 @@ Here's tiydverse
 
 ```{r}
 library(tidyverse)
+library(p8105.datasets)
 ```
 
 here's the dataframe 
