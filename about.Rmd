@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "Introduction"
 output: 
       html_document:
         theme: cerulean
@@ -7,3 +7,4 @@ output:
 
 This website was coded by Kennedy Wade using R Markdown to do all the hard work.
 go back to the [homepage](index.html)
+
